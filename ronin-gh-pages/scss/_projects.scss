@@ -1,0 +1,139 @@
+/* Projects Area css
+============================================================================================ */
+.projects_area{
+	
+}
+.projects_fillter{
+	.filter{
+		text-align: center;
+		margin-top: 70px;
+		margin-bottom: 50px;
+		li{
+			display: inline-block;
+			margin-right: 30px;
+			a{
+				font-size: 13px;
+				font-family: $rob;
+				color: $pfont;
+			}
+			&:last-child{
+				margin-right: 0px;
+			}
+			&.active{
+				a{
+					color: $baseColor;
+				}
+			}
+		}
+	}
+}
+.projects_inner{
+	margin-bottom: -30px;
+}
+.projects_item{
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	&:before{
+		content: "";
+		background: rgba(255, 255, 255, .80);
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: all 300ms ease;
+	}
+	.projects_text{
+		position: absolute;
+		left: 0px;
+		bottom: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+		h4{
+			font-size: 21px;
+			font-family: $hee;
+			font-weight: bold;
+			color: $dip;
+			margin-bottom: 5px;
+			@include transition;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+		p{
+			margin-bottom: 0px;
+			font-size: 14px;
+		}
+	}
+	&:hover{
+		&:before{
+			opacity: 1;
+		}
+		.projects_text{
+			h4{
+				background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+}
+/* End Projects Area css
+============================================================================================ */
+
+/* Portfolio Details Area css
+============================================================================================ */
+.portfolio_details_area{
+	
+}
+.portfolio_details_inner{
+	.row{
+		margin-bottom: 65px;
+	}
+	p{
+		margin-bottom: 30px;
+		font-size: 14px;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+	.portfolio_right_text{
+		padding-left: 98px;
+		h4{
+			color: $dip;
+			font-size: 21px;
+			text-transform: uppercase;
+			margin-bottom: 18px;
+		}
+		p{
+			margin-bottom: 25px;
+			font-size: 14px;
+		}
+		.list{
+			li{
+				margin-bottom: 7px;
+				span{
+					font-size: 14px;
+					color: $dip;
+					font-weight: 500;
+					width: 97px;
+					display: inline-block;
+				}
+				color: $pfont;
+				font-weight: normal;
+				font-size: 14px;
+				&:last-child{
+					margin-bottom: 0px;
+				}
+				i{
+					color: #f1cd09;
+				}
+			}
+		}
+	}
+}
+
+/* End Portfolio Details Area css
+============================================================================================ */

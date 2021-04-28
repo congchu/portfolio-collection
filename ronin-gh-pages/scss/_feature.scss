@@ -1,0 +1,171 @@
+/* Welcome Area css
+============================================================================================ */
+.welcome_area{
+}
+.welcome_inner{
+	.welcome_img{
+		background: #eeeeee;
+		margin-left: 40px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 30px;
+		img{
+			margin-top: -30px;
+		}
+	}
+}
+.welcome_text{
+	margin-top: 45px;
+	h4{
+		color: $dip;
+		font-family: $hee;
+		font-size: 36px;
+		margin-bottom: 18px;
+		text-transform: uppercase;
+	}
+	p{
+		max-width: 495px;
+		line-height: 24px;
+		font-family: $rob;
+		font-size: 14px;
+		margin-bottom: 40px;
+	}
+}
+.wel_item{
+	border: 1px solid #eeeeee;
+	padding: 30px 25px;
+	border-radius: 5px;
+	i{
+		font-size: 24px;
+		background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	h4{
+		font-size: 24px;
+		font-family: $hee;
+		font-weight: bold;
+		color: $dip;
+		margin-bottom: 5px;
+		margin-top: 10px;
+	}
+	p{
+		font-size: 14px;
+		font-family: $rob;
+		color: $pfont;
+		margin-bottom: 0px;
+	}
+}
+
+.tools_expert{
+	box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
+	padding: 50px 35px;
+	h3{
+		color: $dip;
+		font-size: 21px;
+		text-transform: uppercase;
+	}
+	.skill_main{
+		.skill_item{
+			margin-bottom: 18px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+			h4{
+				text-align: right;
+				font-size: 14px;
+				font-family: $rob;
+				font-weight: normal;
+				color: $pfont;
+				margin-bottom: 15px;
+			}
+			.progress{
+				height: 20px;
+				border-radius: 10px;
+				background: transparent;
+				border: 1px solid #eeeeee;
+				padding-left: 5px;
+				padding-right: 5px;
+				box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.2);
+				.progress-bar{
+					width: 0%;
+					transition: width .6s ease;
+					height: 10px;
+					border-radius: 5px;
+					vertical-align: middle;
+					align-self: center;
+					background-image: -moz-linear-gradient( 0deg, rgb(132,144,255) 0%, rgb(98,189,252) 100%);
+					background-image: -webkit-linear-gradient( 0deg, rgb(132,144,255) 0%, rgb(98,189,252) 100%);
+					background-image: -ms-linear-gradient( 0deg, rgb(132,144,255) 0%, rgb(98,189,252) 100%);
+				}
+			}
+		}
+	}
+}
+
+/* End Welcome Area css
+============================================================================================ */
+
+
+/* Feature Area css
+============================================================================================ */
+.feature_area{
+	background: #f9f9ff;
+	&.feature_tow{
+		background: #fff;
+		.feature_item{
+			background: #f9f9ff;
+			&:hover{
+				background: #fff;
+			}
+		}
+	}
+}
+.feature_inner{
+	margin-bottom: -30px;
+}
+.feature_item{
+	padding: 50px 35px;
+	border-radius: 10px;
+	@include transition;
+	background: #fff;
+	margin-bottom: 30px;
+	i{
+		margin-bottom: 35px;
+		display: block;
+		&:before{
+			margin-left: 0px;
+			font-size: 60px;
+			color: #e1e1e1;
+			line-height: 60px;
+		}
+	}
+	h4{
+		color: $dip;
+		font-size: 21px;
+		font-family: $hee;
+		font-weight: bold;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+	p{
+		margin-bottom: 0px;
+	}
+	.main_btn{
+		padding: 0px 30px;
+		line-height: 38px;
+	}
+	&:hover{
+		box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+		border-color: #fff;
+		i{
+			&:before{
+				background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+}
+/* End Feature Area css
+============================================================================================ */
